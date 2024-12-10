@@ -21,9 +21,10 @@
 ~A 1 "../src/TestBench/mix2i_TB.vhd" 9 TB_ARCHITECTURE
 ~E 1 "../src/mult4b.vhd" 28 mult4b
 ~A 1 "../src/mult4b.vhd" 38 mult4b
-~A 1 "../src/mult4b.vhd" 38 str
 ~E 1 "../src/not1i.vhd" 28 not1i
+~A 1 "../src/mult4b.vhd" 38 mult4b
 ~A 1 "../src/not1i.vhd" 37 not1i
+~A 1 "../src/mult4b.vhd" 38 str
 ~E 1 "../src/TestBench/not1i_TB.vhd" 6 not1i_tb
 ~A 1 "../src/TestBench/not1i_TB.vhd" 9 TB_ARCHITECTURE
 ~E 1 "../src/or3i.vhd" 28 or3i
