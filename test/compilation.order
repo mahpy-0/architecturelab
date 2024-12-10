@@ -9,6 +9,3 @@
 .\src\reg8b.vhd
 .\src\packrom.vhd
 .\src\rom1.vhd
-.\src\TestBench\fulladder4i_TB.vhd
-.\src\TestBench\reg8b_TB.vhd
-.\src\TestBench\rom1_TB.vhd

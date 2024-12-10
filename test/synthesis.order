@@ -6,9 +6,6 @@ i<>.\src\mix2i.vhd
 i<>.\src\not1i.vhd
 i<>.\src\fulladder4i.vhd
 i<>.\src\mult4b.vhd
-i<>.\src\TestBench\fulladder4i_TB.vhd
 i<>.\src\reg8b.vhd
-i<>.\src\TestBench\reg8b_TB.vhd
 i<>.\src\packrom.vhd
 i<>.\src\rom1.vhd
-i<>.\src\TestBench\rom1_TB.vhd
