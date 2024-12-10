@@ -1,14 +1,14 @@
 -------------------------------------------------------------------------------
 --
--- Title       : fulladder4i
--- Design      : test
--- Author      : test
--- Company     : Test
+-- Title       : \4bit_full_adder\
+-- Design      : Session2
+-- Author      : m.smasoudi72@gmail.com
+-- Company     : SalTech
 --
 -------------------------------------------------------------------------------
 --
--- File        : C:\My_Designs\test\test\src\fulladder4i.vhd
--- Generated   : Mon Oct 28 10:26:44 2024
+-- File        : C:\My_Designs\Session2\src\4bit_full_adder.vhd
+-- Generated   : Mon Oct 28 09:16:10 2024
 -- From        : interface description file
 -- By          : Itf2Vhdl ver. 1.22
 --
@@ -20,7 +20,7 @@
 
 --{{ Section below this comment is automatically maintained
 --   and may be overwritten
---{entity {fulladder4i} architecture {fulladder4i}}
+--{entity {\4bit_full_adder\} architecture {str}}
 
 library IEEE;
 use IEEE.std_logic_1164.all;
@@ -38,28 +38,28 @@ end IVbit_full_adder;
 --}} End of automatically maintained section
 
 architecture str of IVbit_full_adder is
-component xor2i is
+component gate_xor2i is
 	 port(
 		 i0 : in STD_LOGIC;
 		 i1 : in STD_LOGIC;
 		 q : out STD_LOGIC
 	     );
 end component;
-component fulladder is
+component full_adder is
 	 port(
 		 x : in STD_LOGIC;
 		 y : in STD_LOGIC;
-		 cin : in STD_LOGIC;
+		 c_in : in STD_LOGIC;
 		 s : out STD_LOGIC;
-		 cout : out STD_LOGIC
+		 c_out : out STD_LOGIC
 	     );
 end component;
 signal sig : STD_LOGIC_VECTOR(3 downto 0);
 signal carry : STD_LOGIC_VECTOR(4 downto 0);
 begin					 
 	labal1 : for i in 0 to 3 generate
-		xor_i : xor2i port map (c_in, y(i), sig(i));	 
-		fa_i : fulladder port map (x(i), sig(i), carry(i), sum(i), carry(i+1));
+		xor_i : gate_xor2i port map (c_in, y(i), sig(i));	 
+		fa_i : full_adder port map (x(i), sig(i), carry(i), sum(i), carry(i+1));
 	end generate;
 	carry(0) <= c_in;
 	c_out <= carry(4);

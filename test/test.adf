@@ -17,7 +17,7 @@ REFRESH_FLOW=1
 FLOWTOOLS=NONE
 FAMILY=
 [HierarchyViewer]
-HierarchyInformation=fulladder4i_tb|testbench_for_fulladder4i|1 rom1|rom1|0 rom1_tb|testbench_for_rom1|1
+HierarchyInformation=
 ShowHide=ShowTopLevel
 Selected=
 [Files]
@@ -32,12 +32,6 @@ Selected=
 /reg8b.vhd=-1
 /packrom.vhd=-1
 /rom1.vhd=-1
-TestBench/fulladder4i_TB.vhd=-1
-TestBench/fulladder4i_TB_runtest.do=-1
-TestBench/reg8b_TB.vhd=-1
-TestBench/reg8b_TB_runtest.do=-1
-TestBench/rom1_TB.vhd=-1
-TestBench/rom1_TB_runtest.do=-1
 /untitled.asdb=-1
 /untitled.awc=-1
 [Files.Data]
@@ -52,13 +46,5 @@ TestBench/rom1_TB_runtest.do=-1
 .\src\reg8b.vhd=VHDL Source Code
 .\src\packrom.vhd=VHDL Source Code
 .\src\rom1.vhd=VHDL Source Code
-.\src\TestBench\fulladder4i_TB.vhd=VHDL Test Bench
-.\src\TestBench\fulladder4i_TB_runtest.do=Macro
-.\src\TestBench\reg8b_TB.vhd=VHDL Test Bench
-.\src\TestBench\reg8b_TB_runtest.do=Macro
-.\src\TestBench\rom1_TB.vhd=VHDL Test Bench
-.\src\TestBench\rom1_TB_runtest.do=Macro
 .\src\untitled.asdb=Accelerated Waveform File
 .\src\untitled.awc=Accelerated Waveform Configuration
-[Groups]
-TestBench=1
