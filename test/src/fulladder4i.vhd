@@ -25,44 +25,44 @@
 library IEEE;
 use IEEE.std_logic_1164.all;
 
-entity fulladder4 is
-	port(
-		x : in STD_LOGIC_VECTOR(3 downto 0);
-		y : in STD_LOGIC_VECTOR(3 downto 0);
-		cin : in STD_LOGIC;
-		cout : out STD_LOGIC;
-		s : out STD_LOGIC_VECTOR(3 downto 0)
+entity IVbit_full_adder is
+	 port(
+		 c_in : in STD_LOGIC;
+		 c_out : out STD_LOGIC;
+		 x : in STD_LOGIC_VECTOR(3 downto 0);
+		 y : in STD_LOGIC_VECTOR(3 downto 0);
+		 sum : out STD_LOGIC_VECTOR(3 downto 0)
 	     );
-end fulladder4;
+end IVbit_full_adder;
 
 --}} End of automatically maintained section
 
-architecture fulladder4i of fulladder4i is
-	 	component fulladder is
+architecture str of IVbit_full_adder is
+component xor2i is
+	 port(
+		 i0 : in STD_LOGIC;
+		 i1 : in STD_LOGIC;
+		 q : out STD_LOGIC
+	     );
+end component;
+component fulladder is
 	 port(
 		 x : in STD_LOGIC;
 		 y : in STD_LOGIC;
-		 cin : in STD_LOGIC; 
+		 cin : in STD_LOGIC;
 		 s : out STD_LOGIC;
 		 cout : out STD_LOGIC
 	     );
-	end component;
-		component xor2i is
-	 port(
-		 i0 : in std_logic;
-		 i1 : in std_logic;
-		 q : out std_logic
-	     );
-	end component;
-	signal sig:std_logic_vector(3 downto 0);
-	signal c:std_logic_vector(4 downto 0);
-begin
-	  
-	 -- enter your statements here --
-	 g1:for i in 0 to 3 generate
-		 x1:xor2i port map (  y(i),cin,sig(i));
-		 x2: fulladder port map (x(i),sig(i),c(i),s(i),c(i+1)) ;
-	 end generate;
-	 c(0)<=cin;
-	 cout<=c(4);
-end fulladder4i;
+end component;
+signal sig : STD_LOGIC_VECTOR(3 downto 0);
+signal carry : STD_LOGIC_VECTOR(4 downto 0);
+begin					 
+	labal1 : for i in 0 to 3 generate
+		xor_i : xor2i port map (c_in, y(i), sig(i));	 
+		fa_i : fulladder port map (x(i), sig(i), carry(i), sum(i), carry(i+1));
+	end generate;
+	carry(0) <= c_in;
+	c_out <= carry(4);
+		
+
+end str;
