@@ -1,0 +1,9 @@
+[OPENDOC|Aldec.Hde.HdePlugIn.7|.\test\src/packrom.vhd|]
+TemplateId=0
+tab=lu
+[OPENDOC|Aldec.Hde.HdePlugIn.7|.\test\src/rom1.vhd|]
+TemplateId=0
+tab=lu
+[OPENDOC|Aldec.Hde.HdePlugIn.7|.\test\src/TestBench/rom1_TB.vhd|]
+TemplateId=0
+tab=lu

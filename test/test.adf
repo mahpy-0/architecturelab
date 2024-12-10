@@ -1,0 +1,64 @@
+[Project]
+Current Flow=Generic
+VCS=0
+version=4
+Current Config=compile
+[Configurations]
+compile=test
+[Library]
+test=.\test\test.lib
+[$LibMap$]
+test=.
+Active_lib=
+[Settings]
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+REFRESH_FLOW=1
+FLOWTOOLS=NONE
+FAMILY=
+[HierarchyViewer]
+HierarchyInformation=fulladder4i_tb|testbench_for_fulladder4i|1 rom1|rom1|0 rom1_tb|testbench_for_rom1|1
+ShowHide=ShowTopLevel
+Selected=
+[Files]
+/and2i.vhd=-1
+/xor2i.vhd=-1
+/or3i.vhd=-1
+/fulladder.vhd=-1
+/mix2i.vhd=-1
+/not1i.vhd=-1
+/fulladder4i.vhd=-1
+/mult4b.vhd=-1
+/reg8b.vhd=-1
+/packrom.vhd=-1
+/rom1.vhd=-1
+TestBench/fulladder4i_TB.vhd=-1
+TestBench/fulladder4i_TB_runtest.do=-1
+TestBench/reg8b_TB.vhd=-1
+TestBench/reg8b_TB_runtest.do=-1
+TestBench/rom1_TB.vhd=-1
+TestBench/rom1_TB_runtest.do=-1
+/untitled.asdb=-1
+/untitled.awc=-1
+[Files.Data]
+.\src\and2i.vhd=VHDL Source Code
+.\src\xor2i.vhd=VHDL Source Code
+.\src\or3i.vhd=VHDL Source Code
+.\src\fulladder.vhd=VHDL Source Code
+.\src\mix2i.vhd=VHDL Source Code
+.\src\not1i.vhd=VHDL Source Code
+.\src\fulladder4i.vhd=VHDL Source Code
+.\src\mult4b.vhd=VHDL Source Code
+.\src\reg8b.vhd=VHDL Source Code
+.\src\packrom.vhd=VHDL Source Code
+.\src\rom1.vhd=VHDL Source Code
+.\src\TestBench\fulladder4i_TB.vhd=VHDL Test Bench
+.\src\TestBench\fulladder4i_TB_runtest.do=Macro
+.\src\TestBench\reg8b_TB.vhd=VHDL Test Bench
+.\src\TestBench\reg8b_TB_runtest.do=Macro
+.\src\TestBench\rom1_TB.vhd=VHDL Test Bench
+.\src\TestBench\rom1_TB_runtest.do=Macro
+.\src\untitled.asdb=Accelerated Waveform File
+.\src\untitled.awc=Accelerated Waveform Configuration
+[Groups]
+TestBench=1

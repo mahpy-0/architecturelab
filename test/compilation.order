@@ -1,0 +1,14 @@
+.\src\and2i.vhd
+.\src\xor2i.vhd
+.\src\or3i.vhd
+.\src\fulladder.vhd
+.\src\mix2i.vhd
+.\src\not1i.vhd
+.\src\fulladder4i.vhd
+.\src\mult4b.vhd
+.\src\reg8b.vhd
+.\src\packrom.vhd
+.\src\rom1.vhd
+.\src\TestBench\fulladder4i_TB.vhd
+.\src\TestBench\reg8b_TB.vhd
+.\src\TestBench\rom1_TB.vhd
