@@ -1,14 +1,14 @@
 -------------------------------------------------------------------------------
 --
--- Title       : mult4b
--- Design      : test
--- Author      : test
--- Company     : Test
+-- Title       : g_MULTI4bit
+-- Design      : test7
+-- Author      : MEYBODUNI
+-- Company     : MEYBODUNI
 --
 -------------------------------------------------------------------------------
 --
--- File        : C:\My_Designs\test\test\src\mult4b.vhd
--- Generated   : Mon Nov  4 10:49:27 2024
+-- File        : c:\My_Designs\test7\src\g_MULTI4bit.vhd
+-- Generated   : Mon Nov  4 10:53:47 2024
 -- From        : interface description file
 -- By          : Itf2Vhdl ver. 1.22
 --
@@ -20,7 +20,7 @@
 
 --{{ Section below this comment is automatically maintained
 --   and may be overwritten
---{entity {mult4b} architecture {mult4b}}
+--{entity {g_MULTI4bit} architecture {str}}
 
 library IEEE;
 use IEEE.std_logic_1164.all;
@@ -35,18 +35,51 @@ end mult4b;
 
 --}} End of automatically maintained section
 
-architecture mult4b of mult4b is
-	 	component fulladder is
+architecture str of mult4b is 
+type M1 is array (0 to 3 ) of std_logic_vector(0 to 3 );
+signal X : M1;
+type M2 is array (0 to 3 ) of std_logic_vector (0 to 2 );
+signal sum, carry : M2 ;
+ component fulladder is
 	 port(
 		 x : in STD_LOGIC;
 		 y : in STD_LOGIC;
-		 cin : in STD_LOGIC; 
-		 s : out STD_LOGIC;
-		 cout : out STD_LOGIC
+		 cin : in STD_LOGIC;
+		 cout : out STD_LOGIC;
+		 s : out STD_LOGIC
 	     );
-	end component;
-begin
-
+end component;
+begin		  
+	g1 : for i in 0 to 3 generate
+		g2 : for j in 0 to 3 generate 
+			x(i)(j) <= a(j) and b(i);
+		end generate;
+	end generate;
+	g3 : for k in 0 to 2 generate
+		FA_k : fulladder port map (x(k)(1), x(k + 1)(0), '0', carry(0)(k), sum(0)(k));
+		end generate;
+	g4: for l in 0 to 1 generate
+		g5 : for n in 0 to 1 generate
+			FALN: fulladder port map (x(n)(l + 2), sum(l)(n + 1), carry(l)(n), carry(l + 1)(n),sum(l + 1)(n));	
+		end generate;
+	end generate;
+	g6: for p in 0 to 1 generate 
+		F_AP : fulladder port map (x(3)(p + 1), x(2)(p + 2), carry(p)(2),carry(p + 1)(2), sum(p + 1)(2));
+	end generate;
+	g7: fulladder port map ('0',sum(2)(1), carry(2)(0),carry(3)(0),sum(3)(0));
+	g8: fulladder port map (carry(3)(0),  sum(2)(2), carry(2)(1), carry(3)(1), sum(3)(1));	
+	g9: fulladder port map (carry(3)(1),  x(3)(3), carry(2)(2), carry(3)(2), sum(3)(2));
+	
+	p(0) <= x(0)(0);
+	p(1) <= sum(0)(0);
+	p(2) <= sum(1)(0);
+	p(3) <= sum(2)(0);
+	p(4) <= sum(3)(0);
+	p(5) <= sum(3)(1);
+	p(6) <= sum(3)(2);
+	p(7) <= carry(3)(2);
+	
+	
 	 -- enter your statements here --
 
-end mult4b;
+end str;

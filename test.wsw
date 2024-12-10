@@ -7,10 +7,23 @@ tab=lu
 [OPENDOC|Aldec.Hde.HdePlugIn.7|.\test\src/fulladder4i.vhd|]
 TemplateId=0
 tab=lu
+<<<<<<< HEAD
 [OPENDOC|Aldec.Hde.HdePlugIn.7|.\test\src/mix2i.vhd|]
+=======
+[OPENDOC|Aldec.Hde.HdePlugIn.7|.\test\src/fulladder.vhd|]
+>>>>>>> 3e5e38f1ac012ce045240d4124d2680991ef63f8
 TemplateId=0
 tab=lu
 [OPENDOC|Aldec.Hde.HdePlugIn.7|.\test\src/mult4b.vhd|]
 TemplateId=0
+<<<<<<< HEAD
+=======
+tab=lu
+[OPENDOC|Aldec.Hde.HdePlugIn.7|.\test\src/reg8b.vhd|]
+TemplateId=0
+tab=lu
+[OPENDOC|Aldec.Hde.HdePlugIn.7|.\test\src/packrom.vhd|]
+TemplateId=0
+>>>>>>> 3e5e38f1ac012ce045240d4124d2680991ef63f8
 ActiveDocument=1
 tab=lu
