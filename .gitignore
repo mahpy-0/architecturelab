@@ -4,5 +4,10 @@
 
 *.erf
 
-*.lib*
+*.lib
 
+*.wsw
+
+/*.wsw
+
+*.log
