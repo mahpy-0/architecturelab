@@ -1,4 +1,4 @@
-214
+220
 ~E 1 "../src/and2i.vhd" 28 and2i
 ~A 1 "../src/and2i.vhd" 38 and2i
 ~E 1 "../src/TestBench/and2i_TB.vhd" 6 and2i_tb
@@ -8,6 +8,7 @@
 ~E 1 "../src/fulladder4i.vhd" 28 fulladder4
 ~E 1 "../src/fulladder4i.vhd" 28 fulladder4i
 ~A 1 "../src/fulladder4i.vhd" 40 fulladder4i
+~A 1 "../src/fulladder4i.vhd" 40 str
 ~E 1 "../src/TestBench/fulladder4i_TB.vhd" 6 fulladder4i_tb
 ~A 1 "../src/TestBench/fulladder4i_TB.vhd" 9 TB_ARCHITECTURE
 ~E 1 "../src/TestBench/fulladder_TB.vhd" 6 fulladder_tb
@@ -20,6 +21,7 @@
 ~A 1 "../src/TestBench/mix2i_TB.vhd" 9 TB_ARCHITECTURE
 ~E 1 "../src/mult4b.vhd" 28 mult4b
 ~A 1 "../src/mult4b.vhd" 38 mult4b
+~A 1 "../src/mult4b.vhd" 38 str
 ~E 1 "../src/not1i.vhd" 28 not1i
 ~A 1 "../src/not1i.vhd" 37 not1i
 ~E 1 "../src/TestBench/not1i_TB.vhd" 6 not1i_tb
