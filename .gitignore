@@ -11,3 +11,11 @@
 /*.wsw
 
 *.log
+
+/test/compile/*
+
+compile.*
+
+/test/log/*
+
+/test/test/*
