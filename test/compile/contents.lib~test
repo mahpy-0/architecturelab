@@ -1,8 +1,14 @@
-221
+234
+~E 1 "../src/alu.vhd" 27 alu
+~A 1 "../src/alu.vhd" 32 alu
 ~E 1 "../src/and2i.vhd" 28 and2i
 ~A 1 "../src/and2i.vhd" 38 and2i
 ~E 1 "../src/TestBench/and2i_TB.vhd" 6 and2i_tb
 ~A 1 "../src/TestBench/and2i_TB.vhd" 9 TB_ARCHITECTURE
+~E 1 "../src/and4bit.vhd" 28 and4bit
+~A 1 "../src/and4bit.vhd" 38 and4bit
+~E 1 "../src/TestBench/and4bit_TB.vhd" 6 and4bit_tb
+~A 1 "../src/TestBench/and4bit_TB.vhd" 9 TB_ARCHITECTURE
 ~E 1 "../src/fulladder.vhd" 28 fulladder
 ~A 1 "../src/fulladder.vhd" 40 fulladder
 ~E 1 "../src/fulladder4i.vhd" 28 fulladder4
@@ -21,16 +27,21 @@
 ~A 1 "../src/TestBench/mix2i_TB.vhd" 9 TB_ARCHITECTURE
 ~E 1 "../src/mult4b.vhd" 28 mult4b
 ~A 1 "../src/mult4b.vhd" 38 mult4b
-~E 1 "../src/not1i.vhd" 28 not1i
-~A 1 "../src/mult4b.vhd" 38 mult4b
-~A 1 "../src/not1i.vhd" 37 not1i
 ~A 1 "../src/mult4b.vhd" 38 str
+~E 1 "../src/mult8in1.vhd" 4 Mux8to1
+~A 1 "../src/mult8in1.vhd" 12 Behavioral
+~E 1 "../src/TestBench/mux8to1_TB.vhd" 6 mux8to1_tb
+~A 1 "../src/TestBench/mux8to1_TB.vhd" 9 TB_ARCHITECTURE
+~E 1 "../src/not1i.vhd" 28 not1i
+~A 1 "../src/not1i.vhd" 37 not1i
 ~E 1 "../src/TestBench/not1i_TB.vhd" 6 not1i_tb
 ~A 1 "../src/TestBench/not1i_TB.vhd" 9 TB_ARCHITECTURE
 ~E 1 "../src/or3i.vhd" 28 or3i
 ~A 1 "../src/or3i.vhd" 39 or3i
 ~E 1 "../src/TestBench/or3i_TB.vhd" 6 or3i_tb
 ~A 1 "../src/TestBench/or3i_TB.vhd" 9 TB_ARCHITECTURE
+~E 1 "../src/or4bit.vhd" 28 or4bit
+~A 1 "../src/or4bit.vhd" 38 or4bit
 ~E 1 "../src/packrom.vhd" 27 packrom
 ~A 1 "../src/packrom.vhd" 39 packrom
 ~E 1 "../src/reg8b.vhd" 28 reg8b
@@ -42,9 +53,11 @@
 ~E 1 "../src/TestBench/rom1_TB.vhd" 9 rom1_tb
 ~A 1 "../src/TestBench/rom1_TB.vhd" 12 TB_ARCHITECTURE
 ~C 1 "../src/TestBench/and2i_TB.vhd" 42 testbench_for_and2i
+~C 1 "../src/TestBench/and4bit_TB.vhd" 41 testbench_for_and4bit
 ~C 1 "../src/TestBench/fulladder_TB.vhd" 48 testbench_for_fulladder
 ~C 1 "../src/TestBench/fulladder4i_TB.vhd" 48 testbench_for_fulladder4i
 ~C 1 "../src/TestBench/mix2i_TB.vhd" 40 testbench_for_mix2i
+~C 1 "../src/TestBench/mux8to1_TB.vhd" 41 testbench_for_mux8to1
 ~C 1 "../src/TestBench/not1i_TB.vhd" 37 testbench_for_not1i
 ~C 1 "../src/TestBench/or3i_TB.vhd" 45 testbench_for_or3i
 ~C 1 "../src/TestBench/reg8b_TB.vhd" 41 testbench_for_reg8b

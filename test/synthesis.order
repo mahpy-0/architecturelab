@@ -9,3 +9,7 @@ i<>.\src\mult4b.vhd
 i<>.\src\reg8b.vhd
 i<>.\src\packrom.vhd
 i<>.\src\rom1.vhd
+i<>.\src\mult8in1.vhd
+i<>.\src\alu.vhd
+i<>.\src\and4bit.vhd
+i<>.\src\or4bit.vhd
