@@ -1,6 +1,0 @@
-WARNING DAGGEN_0523: "The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available."
-MESSAGE "File: D:/My_Designs/architecturelab/test/src/and2i.vhd" 
-MESSAGE "Compile Entity "and2i"" 
-MESSAGE "Compile Architecture "and2i" of Entity "and2i"" 
-ERROR VLM_0026: "Cannot write data to the MGF file - possibly no space on disk or MGF file corrupted. In the second case, please use command vdel -all to empty library "test"."
-FAILURE "Compile failure 1 Errors 0 Warnings  Analysis time :  0.1 [s]" 
