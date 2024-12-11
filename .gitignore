@@ -4,5 +4,18 @@
 
 *.erf
 
-*.lib*
+*.lib
 
+*.wsw
+
+/*.wsw
+
+*.log
+
+/test/compile/*
+
+compile.*
+
+/test/log/*
+
+/test/test/*
